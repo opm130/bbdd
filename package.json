@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
- "start": "export NODE_ENV=development && nodemon --exec babel-node index"
+ "start": "nodemon --exec babel-node index"
   },
   "author": "",
   "license": "ISC",
