@@ -14,7 +14,9 @@ app.use(bodyParser.json())
 
 app.use('/api',cors(corsOption),routes)
 
-app.get('/',(req,res)=>res.send('Bienvenidos a mi API'))
+app.get('/',(req,res)=>{
+    console.log("Holas")
+    res.send('Bienvenidos a mi API')})
 
 const server=app.listen(process.env.PORT || 8080,()=>{
     console.log(`Servidor corriendo en puerto: ${server.address().port}`)
