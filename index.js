@@ -41,7 +41,7 @@ app.get('/', (req, res) => {
 });
 
 // Verifica que la variable de entorno PORT esté configurada
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8000;
 console.log(`PORT: ${PORT}`);
 
 const server = app.listen(PORT, () => {
